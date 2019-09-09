@@ -1,0 +1,5 @@
+<app-login *ngIf="!loginService.isUserLoggedIn()"></app-login>
+
+<app-cuerpo *ngIf="loginService.isUserLoggedIn()"></app-cuerpo>
+
+<app-footer *ngIf="loginService.isUserLoggedIn()"></app-footer>
